@@ -182,7 +182,7 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  flex-basis: auto;
+  flex-basis: 385px;
   padding: 32px 40px 20px 32px;
   max-width: 600px;
 }
@@ -341,12 +341,18 @@
 .form__input {
 }
 
+.form__label {
+}
+
+.form__fieldset {
+}
+
 .form__input[type="text"],
 .form__input[type="email"],
 .form__input[type="datetime-local"],
 .form__input[type="number"],
 .form__input_type_select {
-  min-width: 400px;
+  max-width: 385px;
   min-height: 60px;
 }
 
@@ -419,7 +425,7 @@
   background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
 }
 
-.footer__columns {
+.footer__content {
   display: flex;
 }
 
