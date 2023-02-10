@@ -33,8 +33,10 @@
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
+  column-gap: 20px;
+  list-style: none;
 }
 
 .logo {
@@ -51,7 +53,7 @@
   margin-top: 8px;
   display: flex;
   align-items: center;
-  column-gap: 20px;
+
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -114,15 +116,21 @@
   bottom: 40px;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 40px 80px 0;
-  justify-content: space-between;
+  justify-content: flex-start;
   box-sizing: border-box;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+}
+.header__paragraph {
+}
+
+.header__hours {
 }
 
 .header__address {
@@ -159,32 +167,47 @@
 
 .menu__cards {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  max-width: 1300px;
 }
 
 .card {
-  max: width 600px;
+  max-width: 600px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  flex-basis: auto;
+  padding: 32px 40px 20px 32px;
+  max-width: 600px;
 }
 
 .card__title {
-  margin-bottom: 32px;
+  text-align: center;
+  margin: 0 0 32px;
   font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
+  align-self: flex-start;
+}
+
+.card__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
 .card__list-item {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 0;
   padding: 0;
   margin-bottom: 16px;
@@ -265,6 +288,10 @@
   background-repeat: no-repeat;
   padding-top: 100px;
   padding-bottom: 100px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .form__container {
@@ -312,6 +339,15 @@
 }
 
 .form__input {
+}
+
+.form__input[type="text"],
+.form__input[type="email"],
+.form__input[type="datetime-local"],
+.form__input[type="number"],
+.form__input_type_select {
+  min-width: 400px;
+  min-height: 60px;
 }
 
 .form__button {
@@ -388,7 +424,8 @@
 }
 
 .footer__column_content_social {
-  margin-left: 100px;
+  margin-left: auto;
+  justify-content: center;
 }
 
 .footer__logo {
