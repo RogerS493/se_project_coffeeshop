@@ -405,7 +405,7 @@
   border-radius: 2px;
 }
 
-.form__input_type_checkbox {
+.form__label_type_checkbox {
   display: flex;
   justify-content: center;
 }
