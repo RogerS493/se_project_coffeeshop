@@ -167,7 +167,7 @@
   font-family: "Noto Serif";
   font-style: normal;
   font-weight: normal;
-  font-size: 20x;
+  font-size: 20px;
   line-height: 30px;
 }
 
@@ -225,6 +225,7 @@
 .card__list-divider {
   border-bottom: 1px solid #fff;
   flex-grow: 2;
+  min-width: auto;
 }
 
 .recipes {
@@ -283,6 +284,10 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+}
+
+.recipe__video-border {
+  border: 0;
 }
 
 .reservation {
