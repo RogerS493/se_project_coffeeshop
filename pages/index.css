@@ -134,9 +134,6 @@
 .header__paragraph {
 }
 
-.header__hours {
-}
-
 .header__address {
   display: flex;
   justify-content: flex-start;
@@ -176,7 +173,6 @@
 
 .menu__cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
@@ -193,7 +189,6 @@
   align-items: center;
   flex-basis: 385px;
   padding: 32px 40px 20px 32px;
-  max-width: 600px;
 }
 
 .card__title {
@@ -396,9 +391,6 @@
   min-width: 20px;
   min-height: 20px;
   vertical-align: middle;
-}
-
-.form__label {
 }
 
 .form__button:hover {
