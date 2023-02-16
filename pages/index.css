@@ -154,6 +154,8 @@
   max-width: 780px;
   text-align: center;
   padding-top: 100px;
+  margin: 0 auto;
+  margin-bottom: 24px;
   font-family: "Inter";
   font-style: normal;
   font-size: 44px;
@@ -162,8 +164,9 @@
 
 .menu__subtitle {
   max-width: 780px;
-  text-align: flex-end;
-  margin: 24px 0 0;
+  text-align: center;
+
+  margin: 0 auto;
   font-family: "Noto Serif";
   font-style: normal;
   font-weight: normal;
@@ -178,6 +181,8 @@
   list-style: none;
   padding-left: 0;
   max-width: 1300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .card {
@@ -286,8 +291,10 @@
   line-height: 30px;
 }
 
-.recipe__video-border {
+.recipes__video-border {
   border: 0;
+  width: 560;
+  height: 315;
 }
 
 .reservation {
@@ -356,7 +363,8 @@
 
 .form__label {
   border-radius: 4px;
-  padding-bottom: 8px;
+  padding: 0;
+  margin-top: 32px;
 }
 
 .form__fieldset {
