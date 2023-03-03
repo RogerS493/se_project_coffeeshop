@@ -1,5 +1,4 @@
 @import url(../vendor/normalize.css);
-
 @import url(../blocks/page.css);
 @import url(../blocks/footer.css);
 @import url(../blocks/form.css);
@@ -121,6 +120,7 @@
 }
 
 .header__footer {
+  display: flex;
 }
 
 .header__hours {
@@ -140,12 +140,15 @@
   line-height: 20px;
 }
 .header__paragraph {
+  margin: 0;
 }
 
 .header__address {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   margin-right: 80px;
+  position: relative;
+  z-index: 2;
 }
 
 .menu {
@@ -470,7 +473,7 @@
 }
 
 .about__circle_animation_blurred {
-  animation: pulsate 1.3s ease-in-out inf;
+  animation: pulsate 1.3s ease-in-out infinite;
 }
 
 .footer {
