@@ -1,0 +1,47 @@
+.about {
+  padding: 100px 80px;
+  background-color: #1f1f1f;
+  color: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 120px;
+  position: relative;
+}
+.about__title {
+  max-width: 251px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  z-index: 1;
+}
+.about__content {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 660px;
+  z-index: 1;
+}
+
+.about__paragraph {
+  margin-bottom: 20px;
+}
+.about__circle {
+  background-color: #2f80ed;
+  width: 426px;
+  height: 426px;
+  border-radius: 50%;
+  position: absolute;
+  top: -152px;
+  left: -129px;
+  z-index: 0;
+}
+
+.about__circle_animation_blurred {
+  animation: pulsate 1.3s ease-in-out infinite;
+}
